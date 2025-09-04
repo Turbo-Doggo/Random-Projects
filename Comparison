@@ -1,0 +1,35 @@
+/********************************************************************************
+I made this to practice my if-else statements. It just compares the number to 10. 
+********************************************************************************/
+
+#include <stdio.h>
+
+int main()
+{
+    
+    double num;
+    
+    scanf("%lf",&num);
+    
+    if (num > 10) {
+        printf("The number is higher than 10!");
+    }
+    
+    else if (num == 10) {
+        printf("The number is equal to 10~");
+    }
+    
+    else if (num < 10) {
+        printf("The number is not higher than ten...");
+    }
+
+    else {
+        printf("What... what did you do? Did you not put in a number? What's wrong with you..?");
+    }  
+    return 0;
+    }
+
+    }
+
+    return 0;
+}
