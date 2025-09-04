@@ -1,0 +1,50 @@
+#include <stdio.h>
+
+int main()
+{
+
+//Variables
+    int loop = 0;
+    int num;
+    int pos = 0;
+    int array[25];
+
+//The first 25 prime numbers
+    array[0] = 2; array[1] = 3; array[2] = 5; array[3] = 7; array[4] = 11; 
+    array[5] = 13; array[6] = 17; array[7] = 19; array[8] = 23; array[9] = 29; 
+    array[10] = 31; array[11] = 37; array[12] = 41; array[13] = 43; array[14] = 47; 
+    array[15] = 53; array[16] = 59; array[17] = 61; array[18] = 67; array[19] = 71;
+    array[20] = 73; array[21] = 79; array[22] = 83; array[23] = 89; array[24] = 97;
+
+//Input
+    scanf("%d",&num);
+
+/*********************************************************************************************
+| While loop that repeatedely checks if the number is divisible by the current array number. |
+| If it is, the number is divided, the divisor is printed, and the position moved up.        |
+| If it isn't, the position of the array is moved up anyway.                                 |
+| This repeats until the end of the array, when the while loop closes.                       |
+*********************************************************************************************/
+
+    while (loop == 0) {
+    
+    if (num % array[pos] == 0) {
+    
+        printf("%d ",array[pos]);
+        num = num / array[pos];
+        
+        } else if (pos < 25) {
+            
+            pos = pos + 1;
+            
+        } else {
+            
+            loop = loop + 1;
+            
+        }
+        
+    }
+
+
+    return 0;
+}
